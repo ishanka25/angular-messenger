@@ -8,6 +8,7 @@ import {MessageListComponent} from "./messages/message-list.component";
 import {MessageInputComponent} from "./messages/message-input.component";
 import {MessagesComponent} from "./messages/messages.component";
 import {AuthenticationComponent} from "./auth/authentication.component";
+import {HeaderComponent} from "./header.component";
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import {AuthenticationComponent} from "./auth/authentication.component";
         MessageListComponent,
         MessageInputComponent,
         MessagesComponent,
-        AuthenticationComponent
+        AuthenticationComponent,
+        HeaderComponent
     ],
     imports: [BrowserModule, FormsModule],
     bootstrap: [AppComponent]
