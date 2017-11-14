@@ -3,10 +3,13 @@
         {{ message.content }}
     </div>
     <div class="panel-footer">
-        <div class="author">
+        <div class="author" *ngIf="!belongsToUser();else content">
             {{ message.username }}
         </div>
-        <div class="config" >
+        <ng-template #content>
+            <div class="author">You</div>
+        </ng-template>
+        <div class="config" *ngIf="belongsToUser()">
             <a (click)="onEdit()">Edit</a>
             <a (click)="onDelete()">Delete</a>
         </div>
