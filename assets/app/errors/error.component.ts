@@ -22,7 +22,7 @@ export class ErrorComponent implements OnInit{
 
     constructor(private errorService: ErrorService) {};
 
-    onErrorHandler() {
+    onErrorHandled() {
         this.display = 'none';
     }
 
